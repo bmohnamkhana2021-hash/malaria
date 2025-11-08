@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" id="malaria" >
+        <h2>Fortnight Report on Malaria</h2>
+        <p>Namkhana Block , Diamond Harbour HD</p>
+        <hr>
+     <fieldset>
+     <legend>General Info:</legend>
+     <div class="grid">
+     <div class="group">  
+     <label for="from">From :</label>
+     <input type="date" id="from" name="from" required>
+     </div>
+     <div class="group">  
+     <label for="to">To :</label>
+     <input type="date" id="to" name="to" required>
+     </div>     
+     </div>
+     <div class="group">  
+     <label for="fort">Fortnight :</label>
+     <input type="text" id="fort" name="fort" readonly>
+     </div>
+     <div class="grid">
+     <div class="group">  
+     <label for="type">Type of Facility :</label>
+     <select name="type" id="type" required >
+        <option value="">--Type of Facility--</option>
+     </select>     
+     </div> 
+     <div class="group">  
+     <label for="facility">Facility :</label>
+     <select name="facility" id="facility" required>
+        <option value="">--Select Facility--</option>        
+     </select>     
+     </div>     
+     </div>  
+     </fieldset>
+    
+     <fieldset>
+    <legend>Fever cases & RDT</legend>     
+        <div class="group">
+            <label for="fever">Fever Patient:</label>
+            <input type="number" id="fever" name="fever" required>
+        </div>
+        <div class="grid1">
+         <div class="group">
+            <label for="activeRDT">Active RDT:</label>
+            <input type="number" id="activeRDT" name="activeRDT" required>
+        </div>
+        <div class="group">
+            <label for="passiveRDT">Passive RDT:</label>
+            <input type="number" id="passiveRDT" name="passiveRDT" required>
+        </div>
+        <div class="group">
+            <label for="totalRDT">Total RDT:</label>
+            <input type="number" id="totalRDT" name="totalRDT" readonly>
+        </div> 
+    </div>
+    <div class="grid">
+        <div class="group">
+            <label for="rdtpercent">%RDT :</label>
+            <input type="number" id="rdtpercent" name="rdtpercent" readonly>
+        </div>  
+        <div class="group">
+            <label for="stockRDT">RDT in Stock:</label>
+            <input type="number" id="stockRDT" name="stockRDT" required>
+        </div>  
+        </div> 
+        
+     
+    </fieldset>
+    <fieldset>
+        <legend>Result of RDT </legend>
+        <div class="grid">
+         <div class="group">   
+        <label for="pv">Pv: </label>
+        <input type="number" id="pv" name="pv">
+        </div>
+        <div class="group">
+        <label for="pf">Pf: </label>
+        <input type="number" id="pf" name="pf">
+        </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Blood Slide Collection</legend>
+        <div class="grid1">
+         <div class="group">   
+        <label for="activeBS">Active Collection : </label>
+        <input type="number" id="activeBS" name="activeBS">
+        </div>
+        <div class="group">
+        <label for="passiveBS">Passive Collection: </label>
+        <input type="number" id="passiveBS" name="passiveBS">
+        </div>
+        <div class="group">
+        <label for="totalBS">Total Collection: </label>
+        <input type="number" id="totalBS" name="totalBS">
+        </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Mass Slide Collection</legend>
+        <div class="group">
+            <label for="mass">Mass Blood Slide collected?</label>
+            <select name="mass" id="mass">
+                <option value="">--select--</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+    </fieldset>    
+    <button type="submit">Submit Report</button>
+    <footer>@developed by Arthita Roy, EA, Namkhana BPMU</footer>
+    </form>
+    <script src="code.js"></script>
+</body>
+</html>

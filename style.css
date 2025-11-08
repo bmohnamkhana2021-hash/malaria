@@ -1,0 +1,141 @@
+body{
+   
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 75vh;
+    margin: 0 ;  
+    
+}
+
+form{
+    padding: 25px 20px;
+    border: solid 1px teal;
+    border-radius: 75px;
+    max-width: 520px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 5px 2px gray;
+    max-height: fit-content;
+    background-image: linear-gradient(to right,white, whitesmoke,beige);
+}
+input, select{
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid teal;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 15px ;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+}
+fieldset{
+    margin-top: 10px;
+    border: inherit 5px;
+    border-radius: 8px;
+}
+legend{
+    color: black;
+    font-weight: bold;
+
+}
+button{
+    background-color: lightcoral;
+    color: black;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+label{
+    margin-top: 5px;
+    margin-bottom: 1px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+button:hover{
+    background-color:coral;
+}
+h2{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color:rgb(1, 15, 15);
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 15px ;
+}
+footer{
+    margin-top: 6px;
+    text-align: center;
+    opacity: 40%;
+
+}
+/* Overlay style */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 1000;
+}
+
+/* Overlay visible */
+.popup-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Message box style */
+.popup-message {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s, transform 0.3s;
+    max-width: 80%;
+    text-align: center;
+}
+
+/* Fade-in message */
+.popup-message.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Optional message types */
+.popup-message.info { background: #2196F3; color: #fff; }
+.popup-message.success { background: #4CAF50; color: #fff; }
+.popup-message.error { background: #f44336; color: #fff; }
